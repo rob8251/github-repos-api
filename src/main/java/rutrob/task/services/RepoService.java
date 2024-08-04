@@ -14,8 +14,8 @@ public class RepoService {
 
     private final WebClient webClient;
 
-    public RepoService(WebClient.Builder webClientBuilder) {
-        this.webClient = webClientBuilder.build();
+    public RepoService(WebClient webClient) {
+        this.webClient = webClient;
     }
 
     public Flux<ResponseRepo> getReposInfo(String username) {
